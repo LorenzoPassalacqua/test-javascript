@@ -4,12 +4,14 @@ function boo(){
     var b2= document.getElementById("b2");
     var b3= document.getElementById("b3");
     var b4= document.getElementById("b4");
+    var b5= document.getElementById("b5");
 
     b.innerHTML=""
     b1.innerHTML=""
     b2.innerHTML=""
     b3.innerHTML=""
     b4.innerHTML=""
+    b5.innerHTML=""
 
     var x= parseInt(document.getElementById("n1").value);
     var y= parseInt(document.getElementById("n2").value);
@@ -32,5 +34,8 @@ function boo(){
 
     if (x > 10 || y > 10){
        b4.innerHTML="one of the numbers is greater is than 10 ";
+    }
+    if (x === y){
+      b5.innerHTML="are the same type";
     }
 }
