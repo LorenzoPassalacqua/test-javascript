@@ -4,16 +4,15 @@ function maggiorenne(){
     document.getElementById("mag").innerHTML= maggiorenne;
 }
 
+class nvoter {
+  constructor(name, surname) {
+    this.name = name;
+    this.surname = surname;
+  }
+}
 
 function voter(){
-class nvoter {
-    constructor(name, surname) {
-      this.name = name;
-      this.surname = surname;
-    }
-  }
-  
-  const mvoter = new nvoter("lorenzo", "passalacqua");
+  const mvoter = new nvoter(document.getElementById("name").value, document.getElementById("surname").value);
   document.getElementById("full").innerHTML =
   mvoter.name + " " + mvoter.surname;
 }
