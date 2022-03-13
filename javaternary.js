@@ -1,7 +1,10 @@
 function maggiorenne(){
     var x= document.getElementById("adult").value;
+    function mag(){    
     var maggiorenne= (x < 18) ? "you are too young to vote" : "you are old enought to vote";
-    document.getElementById("mag").innerHTML= maggiorenne;
+    return maggiorenne;
+    }
+    document.getElementById("mag").innerHTML= mag();
 }
 
 class nvoter {
